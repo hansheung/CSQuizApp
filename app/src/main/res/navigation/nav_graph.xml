@@ -3,11 +3,43 @@
              xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/homeFragment">
+    app:startDestination="@id/loginFragment">
 
     <fragment
-        android:id="@+id/homeFragment"
-        android:name="com.hansheung.quiz_app.ui.HomeFragment"
-        android:label="fragment_home"
-        tools:layout="@layout/fragment_home" />
+        android:id="@+id/loginFragment"
+        android:name="com.hansheung.quiz_app.ui.login.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_chooseRoleFragment"
+            app:destination="@id/chooseRoleFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_teacherFragment"
+            app:destination="@id/teacherFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_studentFragment"
+            app:destination="@id/studentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/chooseRoleFragment"
+        android:name="com.hansheung.quiz_app.ui.ChooseRoleFragment"
+        android:label="fragment_choose_role"
+        tools:layout="@layout/fragment_choose_role" >
+        <action
+            android:id="@+id/action_chooseRoleFragment_to_teacherFragment"
+            app:destination="@id/teacherFragment" />
+        <action
+            android:id="@+id/action_chooseRoleFragment_to_studentFragment"
+            app:destination="@id/studentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/teacherFragment"
+        android:name="com.hansheung.quiz_app.ui.teacher.TeacherFragment"
+        android:label="fragment_teacher"
+        tools:layout="@layout/fragment_teacher" />
+    <fragment
+        android:id="@+id/studentFragment"
+        android:name="com.hansheung.quiz_app.ui.student.StudentFragment"
+        android:label="fragment_student"
+        tools:layout="@layout/fragment_student" />
 </navigation>
