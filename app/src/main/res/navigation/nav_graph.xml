@@ -5,6 +5,10 @@
     android:id="@+id/nav_graph"
     app:startDestination="@id/loginFragment">
 
+    <action
+        android:id="@+id/action_global_loginFragment"
+        app:destination="@id/loginFragment" />
+
     <fragment
         android:id="@+id/loginFragment"
         android:name="com.hansheung.quiz_app.ui.login.LoginFragment"
@@ -36,10 +40,31 @@
         android:id="@+id/teacherFragment"
         android:name="com.hansheung.quiz_app.ui.teacher.TeacherFragment"
         android:label="fragment_teacher"
-        tools:layout="@layout/fragment_teacher" />
+        tools:layout="@layout/fragment_teacher" >
+        <action
+            android:id="@+id/action_teacherFragment_to_addFragment"
+            app:destination="@id/addFragment" />
+        <action
+            android:id="@+id/action_teacherFragment_to_editFragment"
+            app:destination="@id/editFragment" />
+    </fragment>
     <fragment
         android:id="@+id/studentFragment"
         android:name="com.hansheung.quiz_app.ui.student.StudentFragment"
         android:label="fragment_student"
         tools:layout="@layout/fragment_student" />
+    <fragment
+        android:id="@+id/addFragment"
+        android:name="com.hansheung.quiz_app.ui.teacher.add.AddFragment"
+        android:label="AddFragment"
+        tools:layout="@layout/fragment_add_edit"/>
+    <fragment
+        android:id="@+id/editFragment"
+        android:name="com.hansheung.quiz_app.ui.teacher.edit.EditFragment"
+        android:label="EditFragment"
+        tools:layout="@layout/fragment_add_edit">
+
+        <argument android:name="quizId" app:argType="string" />
+
+    </fragment>
 </navigation>

@@ -6,11 +6,19 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import androidx.fragment.app.viewModels
+import com.hansheung.mob21firebase.ui.base.BaseFragment
+import com.hansheung.mob21firebase.ui.base.BaseViewModel
 import com.hansheung.quiz_app.R
+import com.hansheung.quiz_app.ui.teacher.TeacherViewModel
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
-class StudentFragment : Fragment() {
+class StudentFragment(
+
+) : BaseFragment() {
+
+    override val viewModel: StudentViewModel by viewModels()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

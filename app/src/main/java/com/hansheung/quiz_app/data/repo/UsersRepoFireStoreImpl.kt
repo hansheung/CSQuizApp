@@ -31,9 +31,5 @@ class UsersRepoFireStoreImpl(
         getCollectionRef().document(user.id).set(user).await()
     }
 
-//    override suspend fun addRole(user: User) {
-//        val ref = getCollectionRef().document()
-//        ref.set(user.copy(id = ref.id)).await()
-//    }
 
 }

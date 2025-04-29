@@ -29,7 +29,7 @@ abstract class BaseViewModel(
             null
         } catch (e:Exception) {
             _error.emit("Something went wrong")
-            //throw e
+            throw e
             null //There is a return type T? So I need to return null
         }
     }

@@ -43,13 +43,7 @@ abstract class BaseFragment: Fragment() {
         tvLogout.setOnClickListener {
             viewModel.logout()
 
-            val navHostFragment = requireActivity()
-                .supportFragmentManager
-                .findFragmentById(R.id.navHostFragment) as NavHostFragment
-            val navController = navHostFragment.navController
-            val navGraph = navController.navInflater.inflate(R.navigation.nav_graph)
-
-            navController.setGraph(navGraph, null)
+            findNavController().navigate(R.id.action_global_loginFragment)
         }
     }
 

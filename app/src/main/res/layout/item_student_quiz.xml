@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <com.google.android.material.card.MaterialCardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/xxs">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/xs"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvTitleQuiz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/huge_text_size"
+                android:text="Title"/>
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:id="@+id/rbAns1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="a"/>
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:id="@+id/rbAns2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="b"/>
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:id="@+id/rbAns3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="c"/>
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:id="@+id/rbAns4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="d"/>
+
+
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+</layout>
