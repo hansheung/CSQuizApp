@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        tools:context=".ui.participantQuiz.ParticipantQuizFragment">
+
+        <TextView
+            android:id="@+id/tvViewTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:text="@string/title" />
+
+        <TextView
+            android:id="@+id/tvViewDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/xs"
+            android:textSize="@dimen/extra_large_text_size"
+            android:textAlignment="center"
+            android:text="@string/desc" />
+
+        <TextView
+            android:id="@+id/tvViewTimer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:text="time" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvQuesList"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingHorizontal="@dimen/m"
+            android:paddingVertical="@dimen/xxs" />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnEndQuiz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/m"
+            android:text="Finish"/>
+    </LinearLayout>
+</layout>

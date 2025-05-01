@@ -69,11 +69,11 @@ class TeacherFragment(
         binding.rvQuiz.layoutManager = LinearLayoutManager(requireContext())
         adapter.listener = object: QuizAdapter.Listener {
             override fun onClickItem(quiz: Quiz) {
-//                findNavController().navigate(
-//                    TeacherFragmentDirections.actionTeacherFragmentToEditFragment(
-//                        quiz.quizId!!
-//                    )
-//                )
+                findNavController().navigate(
+                    TeacherFragmentDirections.actionTeacherFragmentToQuizFragment(
+                        quiz.quizId!!
+                    )
+                )
             }
 
             override fun onClickEditItem(quiz: Quiz) {

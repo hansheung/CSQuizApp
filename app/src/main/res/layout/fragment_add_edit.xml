@@ -75,13 +75,12 @@
 </LinearLayout>
 
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btnSubmit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/ic_add"
-        android:layout_marginTop="@dimen/xxl"
-    />
+        android:text="Submit"
+        android:layout_marginTop="@dimen/l"/>
 
 </LinearLayout>
 </layout>

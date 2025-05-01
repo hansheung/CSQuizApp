@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".ui.studentHome.score.ScoreFragment">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/xs">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="@dimen/xxl">
+
+            <TextView
+                android:id="@+id/tvResults"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/giant_text_size"
+                android:paddingBottom="@dimen/m"
+                android:textStyle="bold"
+                android:text="@string/title"/>
+
+            <TextView
+                android:id="@+id/tvScore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/xxs"
+                android:textSize="@dimen/extra_large_text_size"
+                android:text="@string/score"/>
+
+            <TextView
+                android:id="@+id/tvTimeTaken"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/xxs"
+                android:textSize="@dimen/extra_large_text_size"
+                android:text="@string/time"/>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingVertical="@dimen/xxs"
+        app:cornerRadius="5dp"
+        android:text="Home"
+        android:layout_marginTop="@dimen/xxs" />
+
+
+</LinearLayout>
+</layout>
