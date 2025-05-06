@@ -95,7 +95,7 @@ class StudentQuizFragment : BaseFragment() {
     }
 
     private fun setupQuiz(quiz: Quiz) {
-        binding?.run {
+        binding.run {
             tvViewTitle.text = quiz.title
             tvViewDesc.text = quiz.desc
             totalSeconds = viewModel.getSeconds(quiz.timeLimit)
