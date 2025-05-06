@@ -8,5 +8,7 @@
     <color name="green">#57C82F</color>
     <color name="purple">#6554B3</color>
     <color name="red">#DE1844</color>
-
+    <color name="cyan">#00FFF4</color>
+    <color name="correct_answer_background">#00FF5F</color>
+    <color name="wrong_answer_background">#FF0066</color>
 </resources>

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "231378653447",
+    "project_id": "case-study-quiz-app",
+    "storage_bucket": "case-study-quiz-app.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:231378653447:android:0e2c3955712cabfdceb5a2",
+        "android_client_info": {
+          "package_name": "com.hansheung.quiz_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "231378653447-7vnv5n656bd4uut09q1d4gb9ltl01iv7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hansheung.quiz_app",
+            "certificate_hash": "b4b6e1970cd0659b8a015c7fff74b86a3eb38973"
+          }
+        },
+        {
+          "client_id": "231378653447-gef5jtbmdtpolok99tfg30sisbvep5g1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAr15UmNG4Mtd97_RurMRIQsUfplJuqqIA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "231378653447-gef5jtbmdtpolok99tfg30sisbvep5g1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

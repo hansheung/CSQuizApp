@@ -17,4 +17,16 @@
     <dimen name="xxxxl">40dp</dimen>
     <dimen name="xxxxxl">48dp</dimen>
     <dimen name="xxxxxxl">64dp</dimen>
+    <dimen name="min_text_width">96dp</dimen>
+    <dimen name="giant_text_size">24sp</dimen>
+    <dimen name="extra_huge_text_size">22sp</dimen>
+    <dimen name="huge_text_size">20sp</dimen>
+    <dimen name="extra_large_text_size">17sp</dimen>
+    <dimen name="large_text_size">16sp</dimen>
+    <dimen name="medium_text_size">15sp</dimen>
+    <dimen name="small_text_size">14sp</dimen>
+    <dimen name="extra_small_text_size">13sp</dimen>
+    <dimen name="tiny_text_size">12sp</dimen>
+    <dimen name="extra_tiny_text_size">11sp</dimen>
+    <dimen name="mini_text_size">10sp</dimen>
 </resources>

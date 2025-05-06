@@ -1,0 +1,60 @@
+<layout>
+    <data>
+        <variable
+            name="viewModel"
+            type="com.hansheung.quiz_app.ui.teacher.TeacherViewModel" />
+        <import type="android.view.View"/>
+    </data>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.teacher.TeacherFragment">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvQuiz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="@dimen/xxs"
+            android:paddingHorizontal="@dimen/m"
+            />
+
+        <LinearLayout
+            android:id="@+id/llEmpty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:visibility="@{viewModel.empty ? View.VISIBLE: View.GONE}"
+            >
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/ic_empty"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/m"
+                android:textSize="@dimen/m"
+                android:text="@string/nothing_to_display"/>
+
+        </LinearLayout>
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginEnd="@dimen/xxs"
+            android:layout_marginBottom="@dimen/s"
+            android:src="@drawable/ic_add"
+            />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</layout>
