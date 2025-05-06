@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".ui.dashboard.quiz.QuizFragment">
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginEnd="@dimen/m"
+        android:text="Questions"/>
+    <TextView
+        android:id="@+id/etTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/xl"
+        android:textSize="@dimen/xxxxl"
+        />
+
+    <TextView
+        android:id="@+id/etDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/desc"
+        android:textSize="@dimen/xl"
+        android:layout_marginVertical="@dimen/s"
+        />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quiz Id :"
+        android:textSize="@dimen/l"
+        android:textStyle="bold"
+        />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnCopyID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="Copy Id"/>
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time Limit :"
+            android:textSize="@dimen/l"
+            android:layout_marginTop="@dimen/s"
+            android:textStyle="bold"
+            />
+    <TextView
+        android:id="@+id/etTimeLimit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TimeLimit"
+        android:textSize="@dimen/l"
+        android:layout_marginTop="@dimen/s"
+        />
+
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="@dimen/xxs"
+        android:paddingHorizontal="@dimen/m"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvStudent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/m"
+        android:paddingVertical="@dimen/xxs"
+        android:visibility="gone" />
+
+
+
+</LinearLayout>
+</layout>

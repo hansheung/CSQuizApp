@@ -1,0 +1,16 @@
+Index: app/src/main/java/com/hansheung/quiz_app/di/AppModule.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/hansheung/quiz_app/di/AppModule.kt b/app/src/main/java/com/hansheung/quiz_app/core/di/AppModule.kt
+rename from app/src/main/java/com/hansheung/quiz_app/di/AppModule.kt
+rename to app/src/main/java/com/hansheung/quiz_app/core/di/AppModule.kt
+--- a/app/src/main/java/com/hansheung/quiz_app/di/AppModule.kt	(revision 68370c7b0cd263c6c59b0248308c98efde77cfa6)
++++ b/app/src/main/java/com/hansheung/quiz_app/core/di/AppModule.kt	(date 1746365333424)
+@@ -1,4 +1,4 @@
+-package com.hansheung.quiz_app.di
++package com.hansheung.quiz_app.core.di
+ 
+ import com.google.firebase.firestore.FirebaseFirestore
+ import com.hansheung.quiz_app.data.repo.UsersRepo

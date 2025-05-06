@@ -1,0 +1,16 @@
+<changelist name="Uncommitted_changes_before_Checkout_at_5_5_2025_11_25_AM_[Changes]" date="1746415581607" recycled="true" deleted="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_5_5_2025_11_25_AM_[Changes]/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Checkout at 5/5/2025 11:25 AM [Changes]" />
+  <binary>
+    <option name="AFTER_PATH" value="app/src/main/res/drawable/student.png" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_5_5_2025_11_25_AM_[Changes]/student.png" />
+  </binary>
+  <binary>
+    <option name="AFTER_PATH" value="app/src/main/res/drawable/quiz.png" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_5_5_2025_11_25_AM_[Changes]/quiz.png" />
+  </binary>
+  <binary>
+    <option name="AFTER_PATH" value="app/src/main/res/drawable/teacher.png" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_5_5_2025_11_25_AM_[Changes]/teacher.png" />
+  </binary>
+</changelist>
